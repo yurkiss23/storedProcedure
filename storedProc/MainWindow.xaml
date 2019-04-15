@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:storedProc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="lblName" Content="Ім'я" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="45,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="658" TextChanged="TxtName_TextChanged"/>
         <Button x:Name="btnFind" Content="Button" HorizontalAlignment="Left" Margin="708,10,0,0" VerticalAlignment="Top" Width="74" Click="BtnFind_Click" IsEnabled="False"/>
-        <DataGrid HorizontalAlignment="Left" Height="343" Margin="10,41,0,0" VerticalAlignment="Top" Width="772"/>
-        <ProgressBar HorizontalAlignment="Left" Height="30" Margin="0,379,0,0" VerticalAlignment="Bottom" Width="792"/>
+        <DataGrid x:Name="dgUsers" HorizontalAlignment="Left" Height="343" Margin="10,41,0,0" VerticalAlignment="Top" Width="772"/>
+        <ProgressBar x:Name="pgMain" HorizontalAlignment="Left" Height="30" Margin="0,379,0,0" VerticalAlignment="Bottom" Width="792"/>
 
     </Grid>
 </Window>
